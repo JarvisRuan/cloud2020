@@ -1,16 +1,32 @@
 server:
-  port: 8001
+  port: 8081
+
 
 spring:
-  application:
-    name: cloud-payment-service
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-  driver-class-name: org.gjt.mm.mysql.Driver
-  url:
-    username: root
-    password:
-
-mybatis:
-  mapperLocations: classpath:mapper/*.xml
-  type-aliases-package: com.jarvis.springcloud.entities
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      initialSize: 5
+      minIdle: 5
+      maxActive: 20
+      maxWait: 60000
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: SELECT 1 FROM DUAL
+      testWhileIdle: true
+      testOnBorrow: true
+      testOnReturn: true
+      poolPreparedStatements: true
+      maxPoolPreparedStatementPerConnectionSize: 20
+      filters: stat,wall,log4j
+      connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+      useGlobalDataSourceStat: true
+      loginUsername: admin
+      loginPassword: jarvisruan
+      #数据库连接地址
+      url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&allowMultiQueries=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useSSL=false
+      #用户名
+      username: root
+      #密码
+      password: 123456
