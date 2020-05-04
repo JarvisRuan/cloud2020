@@ -1,7 +1,7 @@
 package com.jarvis.springcloud.service.impl;
 
 import com.jarvis.springcloud.dao.PaymentDao;
-import com.jarvis.springcloud.entity.Payment;
+import com.jarvis.springcloud.entities.Payment;
 import com.jarvis.springcloud.service.PaymentService;
 import org.springframework.stereotype.Service;
 import javax.annotation.Resource;

@@ -22,11 +22,11 @@
         <!--            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>-->
         <!--        </dependency>-->
         <!--引入自己定义的api通用包，可以使用Payment支付Entity-->
-<!--        <dependency>-->
-<!--            <groupId>com.jarvis.springcloud</groupId>-->
-<!--            <artifactId>cloud-api-commons</artifactId>-->
-<!--            <version>1.0</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>org.jarvis</groupId>
+            <artifactId>cloud-api-commons</artifactId>
+            <version>${project.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>

@@ -1,10 +1,9 @@
 package com.jarvis.springcloud.controller;
 
-import com.jarvis.springcloud.entity.CommonResult;
-import com.jarvis.springcloud.entity.Payment;
+import com.jarvis.springcloud.entities.CommonResult;
+import com.jarvis.springcloud.entities.Payment;
 import com.jarvis.springcloud.service.PaymentService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;

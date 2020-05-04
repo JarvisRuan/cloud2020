@@ -1,6 +1,6 @@
 package com.jarvis.springcloud.service;
 
-import com.jarvis.springcloud.entity.Payment;
+import com.jarvis.springcloud.entities.Payment;
 import org.apache.ibatis.annotations.Param;
 
 public interface PaymentService {
