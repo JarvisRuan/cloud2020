@@ -10,25 +10,13 @@
     <modelVersion>4.0.0</modelVersion>
     <!--支付模块-->
     <artifactId>provider-payment8081</artifactId>
-    <repositories>
-        <repository>
-            <id>alimaven</id>
-            <name>aliyun maven</name>
-            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
-        </repository>
-    </repositories>
 
     <dependencies>
-        <!--包含了sleuth+zipkin-->
-        <!--        <dependency>-->
-        <!--            <groupId>org.springframework.cloud</groupId>-->
-        <!--            <artifactId>spring-cloud-starter-zipkin</artifactId>-->
-        <!--        </dependency>-->
-        <!--        &lt;!&ndash;eureka-client&ndash;&gt;-->
-        <!--        <dependency>-->
-        <!--            <groupId>org.springframework.cloud</groupId>-->
-        <!--            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>-->
-        <!--        </dependency>-->
+        <!--eureka-server-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
         <!--引入自己定义的api通用包，可以使用Payment支付Entity-->
         <dependency>
             <groupId>org.jarvis</groupId>
