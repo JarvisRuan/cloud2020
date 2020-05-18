@@ -1,4 +1,4 @@
-package springcloud.controller;
+package com.jarvis.springcloud.controller;
 
 import com.jarvis.springcloud.entities.CommonResult;
 import com.jarvis.springcloud.entities.Payment;
